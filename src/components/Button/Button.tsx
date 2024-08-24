@@ -22,7 +22,7 @@ export default class Button extends Component<IButton> {
     const combinedStyle = [styles.standardButton, this.getStyleButton()];
 
     return (
-      <TouchableOpacity onPress={onPress}>
+      <TouchableOpacity onPress={() => onPress(this.props.label)}>
         <Text style={combinedStyle}>{label}</Text>
       </TouchableOpacity>
     );

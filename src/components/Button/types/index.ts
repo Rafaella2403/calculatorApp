@@ -7,6 +7,6 @@ export enum VariantStyleButton {
 
 export interface IButton {
   label: string;
-  onPress: () => void;
+  onPress: (label: string) => void;
   variantStyleButton?: VariantStyleButton
 }
